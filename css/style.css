@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+/* ## Layout
+The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px */
+
+/* For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com/)
+- [IcoMoon](https://icomoon.io/)
+- [Ionicons](https://ionicons.com/) */
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+:root {
+  --color-1: hsl(257, 40%, 49%);
+  --color-2: hsl(300, 69%, 71%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url('/images/bg-desktop.svg');
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--color-1);
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1440px;
+  height: 100%;
+  padding: 80px;
+  padding-bottom: 40px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 220px;
+  margin-bottom: 50px;
+}
+
+.scrn-box img {
+  width: 100%;
+}
+
+.right-box {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.txt-box {
+  padding-top: 150px;
+  padding-left: 80px;
+  padding-right: 30px;
+}
+
+.head {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #fff;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #fff;
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  color: var(--color-1);
+  font-size: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: var(--color-2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.soc-icon-box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.soc-icon {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.soc-icon svg {
+  fill: #fff;
+}
+
+.soc-icon:hover {
+  border: 2px solid var(--color-2);
+  fill: var(--color-2);
+}
+.soc-icon:hover svg {
+  fill: var(--color-2);
+}
+
+@media (max-width: 900px) {
+  body {
+    background-image: url('/images/bg-mobile.svg');
+    background-size: contain;
+    background-position: top;
+  }
+  .container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .scrn-box img {
+    margin-bottom: 50px;
+  }
+
+  .txt-box {
+    padding: 0;
+    text-align: center;
+  }
+
+  .logo {
+    width: 100px;
+    margin-bottom: 30px;
+  }
+
+  .head {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .soc-icon-box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex: 1;
+  }
+}
